@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,7 +15,7 @@ const config: Config = {
       },
       colors: {
         primary: {
-          "100": "*FFE8F0",
+          "100": "#FFE8F0",
           DEFAULT: "#EE2B69",
         },
         secondary: "#FBE843",
@@ -46,4 +47,5 @@ const config: Config = {
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
+
 export default config;
